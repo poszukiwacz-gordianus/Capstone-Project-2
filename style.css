@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+    background-color: #FFFBDA;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+#hero {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+    border: 2.5px solid black;
+    background-color: #FFEC9E;
+}
+
+#hero img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+#resume {
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 2.5px solid black;
+    background-color: #FFEC9E;
+}
+
+#resume a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#project {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    border: 2.5px solid black;
+    background-color: #FFEC9E;
+}
+
+.project-container {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #FFFAB7;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.project-card p {
+     min-height: 150px;
+}
+
+.project-image {
+    height: 200px;
+    width: 100%;
+}
+
+#about-me {
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 2.5px solid black;
+    background-color: #FFEC9E;
+}
+
+#contact {
+    padding-left: 40px;
+    border: 2.5px solid black;
+    background-color: #FFEC9E;
+}
+
+footer {
+    border: 2.5px solid black;
+    padding-left: 40px;
+    background-color: #FFEC9E;
+    margin-bottom: 10px;
+}
+
+@media (max-width:950px) {
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width:840px) {
+
+    .container {
+        width: 95%;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .project-container {
+        min-height: 300px;
+        /* background-color: #80AF81; */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-card p {
+        min-height: 100px;
+   }
+   
+   .project-image {
+       height: 200px;
+   }
+    
+}
+
+@media (max-width:650px) {
+
+    .container {
+        width: 100%;
+    }
+
+    #hero {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 5px;
+    }
+    
+    #hero img{
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+    }
+    
+    #resume {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #project {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .project-container {
+        gap: 10px;
+    }
+    
+    .project-image {
+        height: 150px;
+        width: 100%;
+    }
+    
+    #about-me {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #contact {
+        padding-left: 20px;
+    }
+    
+    footer {
+        padding-left: 20px;
+    }
+    
+}
+
+@media (max-width: 500px){
+    .container {
+        gap: 10px;
+        margin-top: 0px;
+    }
+
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+    
+    #hero {
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 0px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    
+    #hero img{
+        height: 200px;
+    }
+    
+    #resume {
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 0px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    
+    #project {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        border: 0px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    
+    .project-container {
+        gap: 5px;
+    }
+    
+    .project-card {
+        padding: 5px;
+        border: 0px;
+        border-top: 2px solid black;
+    }
+    
+    .project-image {
+        height: 150px;
+        width: 100%;
+    }
+    
+    #about-me {
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 0px;        
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    
+    #contact {
+        padding-left: 5px;
+        border: 0px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    
+    footer {
+        border: 0px;
+        padding-left: 5px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin-bottom: 0px;
+    }
+}
